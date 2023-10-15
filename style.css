@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+}
+
+body{
+    background-image: url('https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-bg.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+#logo{
+    position: fixed;
+    right: 2.5vw;
+    top: 2.5vh;
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+table{
+    width: 65vw;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+}
+
+.rows{
+    border-bottom: 2px solid #CACACA;
+}
+
+#row1{
+    background-color: #F05136;
+    color: white;
+}
+#row1 td:last-of-type{
+    text-align: right;
+}
+.playerName{
+    color: #3A87EE;
+}
+
+td, th{
+    padding: 10px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.strong{
+    font-weight: 550;
+    text-align: right;
+}
+#heart{
+    margin-top: 20px;
+}
+
+.grey{
+    color: #838383;
+}
+
+footer{
+    font-size: 18px;
+}
+
+h1 
+{
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px #9F9F9F;
+}
+
+h3{
+    color: #696969;
+    font-size: 25px;
+    font-weight:600;
+}
+
+.left{
+    text-align: left;
+    margin-left: 10px;
+}
