@@ -17,7 +17,16 @@
                 India Vs SriLanka ScoreCard
             </h3>
         </div>
-        <table>
+        <div id="tableDiv">
+            <!-- img Div to display the player name and info -->
+            <div id="imgDiv">
+                <h3 id="player"></h3>
+                <img src="" alt="" id="info">
+                <span onclick="clearDisplay()" id="crossButton">&nbsp;&nbsp;X&nbsp;&nbsp;</span>
+            </div>
+
+            <!-- the table -->
+            <table id="table">
             <tr id="row1">
                 <td>India Innings</td>
                 <td colspan="6">27 - 4 (48.2)</td>
@@ -31,7 +40,7 @@
                 <th class="strong">SR</th>
             </tr>
             <tr class="rows">
-                <td class="playerName">Virender Sehwag</td>
+                <td><span class="playerName" onclick="display(0)">Virender Sehwag</span></td>
                 <td class="grey">lbw b L Malinga</td>
                 <td class="strong">0</td>
                 <td class="strong">2</td>
@@ -40,7 +49,7 @@
                 <td class="strong">0.00</td>
             </tr>
             <tr class="rows">
-                <td class="playerName">Sachin Tendulkar</td>
+                <td ><span class="playerName" onclick="display(1)">Sachin Tendulkar</span></td>
                 <td class="grey">c K Sangakkara b L Malinga</td>
                 <td class="strong">18</td>
                 <td class="strong">14</td>
@@ -49,7 +58,7 @@
                 <td class="strong">128.57</td>
             </tr>
             <tr class="rows">
-                <td class="playerName">Gautam Gambhir</td>
+                <td ><span class="playerName" onclick="display(2)">Gautam Gambhir</span></td>
                 <td class="grey">b T Perera</td>
                 <td class="strong">97</td>
                 <td class="strong">122</td>
@@ -58,7 +67,7 @@
                 <td class="strong"> 79.51</td>
             </tr>
             <tr class="rows">
-                <td class="playerName">Virat Kohli</td>
+                <td><span class="playerName" onclick="display(3)">Virat Kohli</span></td>
                 <td class="grey">c & b T Dilshan</td>
                 <td class="strong">35</td>
                 <td class="strong">49</td>
@@ -67,7 +76,7 @@
                 <td class="strong">71.43</td>
             </tr>
             <tr class="rows">
-                <td class="playerName">MS Dhoni (c & wk)</td>
+                <td><span class="playerName" onclick="display(4)">MS Dhoni (c & wk)</span></td>
                 <td class="grey">not out</td>
                 <td class="strong">91</td>
                 <td class="strong">79</td>
@@ -76,7 +85,7 @@
                 <td class="strong">115.19</td>
             </tr>
             <tr class="rows">
-                <td class="playerName">Yuvraj Singh</td>
+                <td><span class="playerName" onclick="display(5)">Yuvraj Singh</span></td>
                 <td class="grey">not out</td>
                 <td class="strong">21</td>
                 <td class="strong">24</td>
@@ -95,9 +104,17 @@
             </tr>
             <tr class="rows">
                 <td>Did not bat</td>
-                <td colspan="6" class="playerName">Suresh Raina, Harbhajan Singh, Zaheer Khan, Munaf Patel, S Sreesanth</td>
+                <td colspan="6">
+                    <span class="playerName" onclick="display(6)"> Suresh Raina,</span>
+                    <span class="playerName" onclick="display(7)"> Harbhajan Singh,</span>
+                    <span class="playerName" onclick="display(8)">Zaheer Khan,</span>
+                    <span class="playerName" onclick="display(9)"> Munaf Patel,</span>
+                    <span class="playerName" onclick="display(10)">S Sreesanth</span> 
+                </td>
             </tr>
-        </table>
+            </table>
+        </div>
+
         <footer>
             Made with <img src="https://kalvium.community/images/heart_icon.svg" alt="heart" id="heart"> by Sujal
         </footer>

@@ -41,11 +41,18 @@ table{
     background-color: #F05136;
     color: white;
 }
+
 #row1 td:last-of-type{
     text-align: right;
 }
+
 .playerName{
     color: #3A87EE;
+    cursor: pointer;
+}
+
+.playerName:hover{
+    color:blue;
 }
 
 td, th{
@@ -64,6 +71,7 @@ td, th{
 
 .grey{
     color: #838383;
+   /* display: none;*/
 }
 
 footer{
@@ -86,4 +94,31 @@ h3{
 .left{
     text-align: left;
     margin-left: 10px;
+}
+
+#tableDiv{
+    position: relative;
+    width: 65vw;
+}
+
+#imgDiv{
+    display:none;
+    position: absolute;
+    right: 25%;
+    top: 10%;
+    z-index: 100;
+}
+
+#crossButton{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #e60e1c30;
+    border-radius: 50%;
+    font-weight: 900;
+}
+
+#crossButton:hover{
+    color: #8b0808ac;
+    cursor: pointer;
 }
